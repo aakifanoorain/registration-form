@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #c99fbe, #6c1c8f);
+        }
+
+        .container1 {
+            background-color: white;
+            width: 450px;
+            height: 450px;
+            float: left;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin: 30px 200px;
+            position: relative;
+            top: -399px;
+            right: 5px;
+        }
+
+        img {
+            float: left;
+            border-top-left-radius: 20px;
+            border-top-left-radius: 20px;
+            position: relative;
+            left: 256px;
+            margin: 61px;
+            width: 322px;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .inputbox input {
+            border-radius: 70px;
+            border: none;
+            margin-left: 11px;
+            padding: 11px;
+            background-color: rgb(240, 239, 238);
+            width: 296px;
+        }
+
+        .i {
+            position: relative;
+            top: -19px;
+            right: -68px;
+        }
+
+        .inputbox {
+            padding: 30px;
+        }
+
+        .button input {
+            text-align: center;
+            position: relative;
+            left: -1px;
+            bottom: -2px;
+            width: 306px;
+            background-color: rgb(69, 39, 97);
+            color: white;
+            cursor: pointer;
+        }
+
+        .r {
+            font-size: small;
+            position: relative;
+            top: -5px;
+            right: -73px;
+            padding-left: 76px;
+        }
+
+        .p {
+            font-size: 14px;
+            position: relative;
+            top: -29px;
+            right: -238px;
+
+        }
+
+        .r input {
+            position: relative;
+            bottom: -46px;
+            left: -280px;
+        }
+
+        .d {
+            font-size: medium;
+            position: relative;
+            bottom: -36px;
+            right: -154px;
+        }
+
+        .a {
+            position: relative;
+            top:11px;
+            right: 105px;
+            font-size: 13px;
+        }
+
+        .img {
+            height: 430px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login page"></div>
+    <div class="img">
+        <img src="IMG_20240501_120611.jpg" alt="">
+    </div>
+    <div class="container1" id="login form">
+        <form action="">
+            <h1>LOGIN</h1>
+            <div class="inputbox">
+                <div>
+                    <label for="Username">Username</label>
+                </div>
+                <div>
+                    <input type="text"id="username" username="Username" id="Username">
+                </div>
+                <br>
+                <div>
+                    <label for="Password" >Password</label>
+                </div>
+                <div>
+                    <input type="text"id="password" Passwor="Password" id="Password">
+                </div>
+                <div class="r">
+                    <input type="checkbox">
+                    <h4 class="a">Remember me</h4>
+                </div>
+                <div class="p">
+                    Forget password?
+                </div>
+                <div class="button" style="cursor: pointer;">
+                    <button type="login" value="login"></button> 
+                   
+            </div>
+            <div id="errormessage"></div>
+                <div class="d">
+                    Don't have an account? <a href="index.html">Register</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("login form").addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    var username = document.getElementById ('username').value;
+    var password = document.getElementById('password').value;
+    var erroemessage = document.getElementById('erroemessage');
+
+if(username === "aakifa" && password === "12345")
+{
+    alert("login succesfull");
+}
+else{
+erroemessage.textContent = "Invalid username or password\
+"
+}
+
+
+
+
+});
+    </script>
+</body>
+
+</html>
